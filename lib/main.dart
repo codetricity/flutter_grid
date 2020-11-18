@@ -34,7 +34,7 @@ class SquareView extends StatelessWidget {
           ),
           Flexible(
             child: GridView.count(
-              childAspectRatio: 2,
+              childAspectRatio: 4,
               crossAxisCount: 1,
               children: [
                 Card(
@@ -49,78 +49,45 @@ class SquareView extends StatelessWidget {
                       }
                       print('tapped tile');
                     },
-                    leading: Icon(
-                      Icons.bakery_dining,
-                      color: Colors.brown[300],
-                      size: 100.0,
-                    ),
-                    title: Text('Baking'),
-                    subtitle: Text('Croissants and muffins'),
-                  ),
-                ),
-                InkWell(
-                  onTap: () async {
-                    const url = 'https://www.youtube.com/watch?v=gdZLi9oWNZg';
-                    if (await canLaunch(url)) {
-                      await launch(url);
-                    } else {
-                      throw 'Could not open $url';
-                    }
-                  },
-                  child: Card(
-                    child: ListTile(
-                      leading: Icon(
-                        Icons.audiotrack,
-                        color: Colors.green,
-                        size: 100.0,
-                      ),
-                      title: Text('K-POP'),
-                      subtitle: Text('Music and accessories'),
-                    ),
+                    leading: Image.asset('assets/images/lake.jpg'),
+                    title: Text('Lake'),
+                    subtitle: Text('Fishing and hiking'),
                   ),
                 ),
                 Card(
                   child: ListTile(
-                    leading: Icon(
-                      Icons.beach_access,
-                      color: Colors.blue,
-                      size: 100.0,
-                    ),
-                    title: Text('Beach'),
-                    subtitle: Text('Beach and surf'),
+                    onTap: () async {
+                      const url = 'https://www.youtube.com/watch?v=gdZLi9oWNZg';
+                      if (await canLaunch(url)) {
+                        await launch(url);
+                      } else {
+                        throw 'Could not open $url';
+                      }
+                    },
+                    leading: Image.asset('assets/images/trail.jpg'),
+                    title: Text('Trail'),
+                    subtitle: Text('Less than a mile'),
                   ),
                 ),
                 Card(
                   child: ListTile(
-                    leading: Icon(
-                      Icons.favorite,
-                      color: Colors.pink,
-                      size: 100.0,
-                    ),
-                    title: Text('Favorites'),
-                    subtitle: Text('Saved information'),
-                  ),
-                ),
-                Card(
-                  child: ListTile(
-                    leading: Icon(
-                      Icons.brush,
-                      color: Colors.black38,
-                      size: 100.0,
-                    ),
+                    leading: Image.asset('assets/images/art.jpg'),
                     title: Text('Art'),
-                    subtitle: Text('Painting and calligraphy'),
+                    subtitle: Text('Black Lives Matter'),
                   ),
                 ),
                 Card(
                   child: ListTile(
-                    leading: Icon(
-                      Icons.cake,
-                      color: Colors.pink[200],
-                      size: 100.0,
-                    ),
-                    title: Text('Cupcakes'),
-                    subtitle: Text('Fun pastry celebration'),
+                    leading: Image.asset('assets/images/sculpture.jpg'),
+                    title: Text('Sculpture'),
+                    subtitle: Text('Silicon Valley culture'),
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: Image.network('https://i.imgur.com/lk6WHIW.jpg'),
+                    title: Text('Ocean'),
+                    subtitle: Text('Exotic reefs'),
                   ),
                 ),
               ],

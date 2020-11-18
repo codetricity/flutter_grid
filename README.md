@@ -1,4 +1,3 @@
-# Links
+# Images
 
-Install Flutter [url_launcher](https://pub.dev/packages/url_launcher)
-
+Thumbnail image demo.
