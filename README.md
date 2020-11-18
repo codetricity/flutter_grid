@@ -27,3 +27,7 @@ Flutter GridView exercises.
 
 * use Flutter [url_launcher](https://pub.dev/packages/url_launcher)
 * the link will open in a new browser window
+
+## 4 - Images
+
+![images](doc/images.gif)
