@@ -40,7 +40,7 @@ class SquareView extends StatelessWidget {
                   child: ListTile(
                     leading:
                         Icon(Icons.bakery_dining, color: Colors.brown[300]),
-                    title: Text('Pastries '),
+                    title: Text('Baking'),
                     subtitle: Text('Croissants and muffins'),
                   ),
                 ),
@@ -75,8 +75,8 @@ class SquareView extends StatelessWidget {
                 Card(
                   child: ListTile(
                     leading: Icon(Icons.cake, color: Colors.pink[200]),
-                    title: Text('Beach'),
-                    subtitle: Text('Beach and surf'),
+                    title: Text('Cupcakes'),
+                    subtitle: Text('Fun pastry celebration'),
                   ),
                 ),
               ],
