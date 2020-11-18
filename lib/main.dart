@@ -38,7 +38,7 @@ class SquareView extends StatelessWidget {
               crossAxisCount: 1,
               children: [
                 Card(
-                  child: InkWell(
+                  child: ListTile(
                     onTap: () async {
                       const url =
                           'https://www.loveandlemons.com/baking-recipes/';
@@ -49,15 +49,13 @@ class SquareView extends StatelessWidget {
                       }
                       print('tapped tile');
                     },
-                    child: ListTile(
-                      leading: Icon(
-                        Icons.bakery_dining,
-                        color: Colors.brown[300],
-                        size: 100.0,
-                      ),
-                      title: Text('Baking'),
-                      subtitle: Text('Croissants and muffins'),
+                    leading: Icon(
+                      Icons.bakery_dining,
+                      color: Colors.brown[300],
+                      size: 100.0,
                     ),
+                    title: Text('Baking'),
+                    subtitle: Text('Croissants and muffins'),
                   ),
                 ),
                 InkWell(
