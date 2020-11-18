@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Links',
+      title: 'Images',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
@@ -29,7 +29,7 @@ class SquareView extends StatelessWidget {
       body: Column(
         children: [
           Text(
-            'Card and ListTile',
+            'Image Gallery',
             style: TextStyle(fontSize: 18),
           ),
           Flexible(
