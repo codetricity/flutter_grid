@@ -10,3 +10,7 @@ Flutter GridView exercises.
 ![squares](doc/squares.gif)
 
 * containers
+
+## 2 - Tiles
+
+![tiles](doc/tiles.gif)
