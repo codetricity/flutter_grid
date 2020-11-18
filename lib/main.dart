@@ -28,21 +28,57 @@ class SquareView extends StatelessWidget {
       body: Column(
         children: [
           Text(
-            'Colored Squares',
+            'Card and ListTile',
             style: TextStyle(fontSize: 18),
           ),
           Flexible(
             child: GridView.count(
+              childAspectRatio: 2,
               crossAxisCount: 2,
               children: [
-                Container(
-                  color: Colors.green,
+                Card(
+                  child: ListTile(
+                    leading:
+                        Icon(Icons.bakery_dining, color: Colors.brown[300]),
+                    title: Text('Pastries '),
+                    subtitle: Text('Croissants and muffins'),
+                  ),
                 ),
-                Container(color: Colors.yellow),
-                Container(color: Colors.blue),
-                Container(color: Colors.purple),
-                Container(color: Colors.red),
-                Container(color: Colors.amber)
+                Card(
+                  child: ListTile(
+                    leading: Icon(Icons.favorite, color: Colors.pink),
+                    title: Text('Favorites'),
+                    subtitle: Text('Saved information'),
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: Icon(Icons.audiotrack, color: Colors.green),
+                    title: Text('K-POP'),
+                    subtitle: Text('Music and accessories'),
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: Icon(Icons.beach_access, color: Colors.blue),
+                    title: Text('Beach'),
+                    subtitle: Text('Beach and surf'),
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: Icon(Icons.brush, color: Colors.black38),
+                    title: Text('Art'),
+                    subtitle: Text('Painting and calligraphy'),
+                  ),
+                ),
+                Card(
+                  child: ListTile(
+                    leading: Icon(Icons.cake, color: Colors.pink[200]),
+                    title: Text('Beach'),
+                    subtitle: Text('Beach and surf'),
+                  ),
+                ),
               ],
             ),
           ),
