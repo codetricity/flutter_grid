@@ -40,13 +40,20 @@ class SquareView extends StatelessWidget {
                 Card(
                   child: ListTile(
                     onTap: () async {
-                      const url =
-                          'https://www.loveandlemons.com/baking-recipes/';
-                      if (await canLaunch(url)) {
-                        await launch(url);
-                      } else {
-                        throw 'Could not open $url';
-                      }
+                      /// more information on snackbar is here
+                      /// https://flutter.dev/docs/release/breaking-changes/scaffold-messenger
+                      ScaffoldMessenger.of(context).showSnackBar(
+                        SnackBar(
+                          content:
+                              Text('Boronda Lake is part of Foothills Park'),
+                          action: SnackBarAction(
+                            label: 'More info',
+                            onPressed: () {
+                              print('display more info');
+                            },
+                          ),
+                        ),
+                      );
                       print('tapped tile');
                     },
                     leading: Image.asset('assets/images/lake.jpg'),
