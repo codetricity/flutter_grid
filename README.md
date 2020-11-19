@@ -31,3 +31,9 @@ Flutter GridView exercises.
 ## 4 - Images
 
 ![images](doc/images.gif)
+
+## 5 - Snackbar
+
+![snackbar](doc/snackbar.gif)
+
+https://flutter.dev/docs/release/breaking-changes/scaffold-messenger
